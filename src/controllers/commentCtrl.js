@@ -51,10 +51,10 @@ export const getCommentsByPost = async (req, res) => {
   try {
     const comments = await Comment.find({ post: postId }).populate(
       "user",
-      "firstName lastName email profileImage -_id"
+      "firstName lastName email profileImage profileLogo -_id"
     ).populate({
       path: 'replies.user',
-      select: 'firstName lastName profileImage -_id'
+      select: 'firstName lastName profileImage  profileLogo -_id'
     });
 
     res.status(200).json(comments);
