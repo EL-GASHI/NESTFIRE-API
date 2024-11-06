@@ -1,6 +1,6 @@
 import User from "../models/User.js";
 import cloudinary from "../config/cloudinaryConfig.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import {
   validateCreateUser,
   validateUpdateUser,
