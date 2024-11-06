@@ -1,0 +1,129 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fd4b82, #ff7422); /* Instagram-like gradient */
+    color: white;
+    font-size: 16px;
+  }
+  
+  /* Container for form */
+  .container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1.greeting {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .instruction {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 25px;
+  }
+  
+  /* Form fields */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    align-self: flex-start;
+    margin-left: 20px;
+  }
+  
+  .input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: #fd4b82;
+    outline: none;
+  }
+  
+  /* Error handling for input fields */
+  .input-error {
+    border-color: #ff4d4d;
+  }
+  
+  .error-text {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Button Styling */
+  .button {
+    background: #fd4b82;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .button:hover {
+    background: #e74c3c;
+  }
+  
+  .link {
+    margin-top: 20px;
+  }
+  
+  .link a {
+    color: #fd4b82;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .container {
+      padding: 30px;
+      width: 80%;
+    }
+  
+    h1.greeting {
+      font-size: 1.8rem;
+    }
+  
+    .instruction {
+      font-size: 0.9rem;
+    }
+  }
+  
