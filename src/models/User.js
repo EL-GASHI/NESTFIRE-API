@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 import validator from "validator";
-import randomColor from "randomcolor"; // Importing the randomcolor package
 
 const { Schema } = mongoose;
 
